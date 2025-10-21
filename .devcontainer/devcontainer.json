@@ -1,0 +1,13 @@
+{
+  "name": "dinos-dev",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "forwardPorts": [8000],
+  "customizations": {
+    "vscode": {
+      "extensions": ["ritwickdey.LiveServer"],
+      "settings": {
+        "liveServer.settings.port": 8000
+      }
+    }
+  }
+}
