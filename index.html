@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dinos</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+        margin: 0;
+        padding: 2rem;
+        background: #f7fbff;
+        color: #0b1a2b;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+      .card {
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(13, 30, 45, 0.07);
+        max-width: 800px;
+      }
+      footer {
+        margin-top: 1.5rem;
+        color: #415565;
+        font-size: 0.9rem;
+      }
+      .dino {
+        font-family: "Times New Roman", serif;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="dino">🦕</div>
+      <h1>Dinos — quick dev server</h1>
+    </header>
 
+    <main class="card">
+      <p>
+        This is a tiny HTML demo page. Your workspace is being served over a
+        local HTTP server so you can open this file in a browser.
+      </p>
+      <p>
+        Try editing <code>index.html</code> in your workspace and refresh the
+        page to see changes.
+      </p>
+      <details>
+        <summary>Helpful commands</summary>
+        <ul>
+          <li>
+            <code>python -m http.server 8000</code> — start a simple http server
+          </li>
+          <li>
+            <code>curl http://localhost:8000/</code> — fetch the page from the
+            terminal
+          </li>
+        </ul>
+      </details>
+    </main>
+
+    <footer>
+      Server URL: <a href="http://localhost:8000">http://localhost:8000</a>
+    </footer>
+  </body>
+</html>
